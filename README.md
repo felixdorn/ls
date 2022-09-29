@@ -1,7 +1,5 @@
 # ls-proxy
 
-> TODO: Rewrite that in Zig.
-
 A little command line utility that switches `-a` and `-A` flags before proxying standard I/O to ls.
 
 It also tweaks the help command output to match the new flags.
