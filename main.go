@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-const helpMessage = "\nYou are using a custom version of ls where -a -> -A and vice-versa."
+const helpMessage = "\nYou are using a custom version of ls where -a -> -A and vice-versa.\n"
 
 func main() {
 	err := RunLsCommand(os.Args[1:], os.Stdout, os.Stdin, os.Stderr)
@@ -39,7 +39,11 @@ func RunLsCommand(args []string, stdout io.ReadWriter, stderr io.Writer, stdin i
 				1,
 			)
 
-			_, err := stdout.Write(updatedOut)
+			if _, err := stdout.Write(updatedOut); err != nil {
+				return err
+			}
+
+			_, err := stdout.Write([]byte(helpMessage))
 			return err
 		}
 	}

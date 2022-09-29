@@ -12,7 +12,8 @@ It also tweaks the help command output to match the new flags.
 - -A, --almost-all           do not list implied . and ..
 + -a, --almost-all           do not list implied . and ..
 + -A, --all                  do not ignore entries starting with .
-....
+...
+
 ```
 
 ## Building
