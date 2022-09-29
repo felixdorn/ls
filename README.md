@@ -1,4 +1,4 @@
-# ls
+# ls-proxy
 
 > TODO: Rewrite that in Zig.
 
