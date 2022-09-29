@@ -16,7 +16,7 @@ It also tweaks the help command output to match the new flags.
 
 ## Installation
 ```bash
-curl -L https://github.com/felixdorn/ls/releases/latest/download/ls -o /usr/bin/ls-proxy
+curl -L https://github.com/felixdorn/ls-proxy/releases/latest/download/ls -o /usr/bin/ls-proxy
 chmod +x /usr/bin/ls-proxy
 
 # In your ~/.bashrc / ~/.zshrc / whatever
