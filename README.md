@@ -21,7 +21,7 @@ It also tweaks the help command output to match the new flags.
 curl -L https://github.com/felixdorn/release-that/releases/latest/download/ls -o /usr/bin/ls-proxy
 chmod +x /usr/bin/ls-proxy
 
-# In your ~/.bashrc / ~/.zshrc
+# In your ~/.bashrc / ~/.zshrc / whatever
 alias ls="/usr/bin/ls-proxy"
 ```
 
